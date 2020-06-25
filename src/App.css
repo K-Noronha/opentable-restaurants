@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer > div {
+  border: solid, thick, black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
