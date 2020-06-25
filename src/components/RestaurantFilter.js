@@ -62,7 +62,7 @@ const RestaurantFilter = ({ params, searchRestaurants, setParams }) => {
           </div>
         </div>
         <div className="filter__button">
-          <input type="submit" value="Find!" />
+          <input type="submit" value="Find!" data-testid="submit-button" />
         </div>
       </form>
     </section>
