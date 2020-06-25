@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
-      <h1>Search for Restaurants in an Area</h1>
+    <header className="header">
+      <h1>Find A Restaurant</h1>
     </header>
   );
 };

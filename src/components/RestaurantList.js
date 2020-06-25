@@ -5,7 +5,7 @@ import RestaurantCard from "./RestaurantCard";
 
 const RestaurantList = ({ list }) => {
   return (
-    <section>
+    <section className="list">
       {list && list.length > 0 ? (
         list.map((item) => (
           <RestaurantCard

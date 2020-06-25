@@ -1,0 +1,120 @@
+$red: #ff3b3f;
+$white: #efefef;
+$grey: #a9a9a9;
+$blue: #caebf2;
+$black: #0e0b16;
+body {
+  background-color: $white;
+}
+.header {
+  background-color: $red;
+  color: $black;
+  padding: 2rem 0;
+  h1 {
+    margin: 0;
+  }
+}
+.filter {
+  background-color: $white;
+  padding: 0 30%;
+  &__form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__input {
+    text-align: left;
+    margin: 0.5rem;
+    input {
+      padding: 0.2rem;
+    }
+  }
+  &__button {
+    input {
+      padding: 0.5rem 2rem;
+      background-color: $blue;
+      border-color: $grey;
+      &:hover {
+        color: $red;
+        box-shadow: 5px 3px 8px $black;
+      }
+    }
+  }
+}
+.list {
+  margin: 0 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: $black;
+  padding: 0 1rem;
+  background-color: $blue;
+  text-align: left;
+
+  &__name {
+    width: 40%;
+    margin-right: 0.5rem;
+  }
+  &__place {
+    width: 20%;
+    margin-right: 0.5rem;
+  }
+  &__price {
+    width: 5%;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    &__place {
+      width: 100%;
+      margin: 0;
+    }
+    &__price {
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+}
+
+.footer {
+  background-color: $red;
+  color: $black;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 1rem 0;
+
+  &__pages {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 1rem;
+    border-radius: 20%;
+    border-width: thin;
+
+    &:hover {
+      color: $red;
+      background-color: $blue;
+      box-shadow: 5px 3px 8px $black;
+    }
+  }
+
+  h4 {
+    margin: 0;
+  }
+}

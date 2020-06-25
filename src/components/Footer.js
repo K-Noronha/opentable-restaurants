@@ -16,13 +16,15 @@ const Footer = ({ params, total_entries, searchRestaurants }) => {
     searchRestaurants(change);
   };
   return (
-    <footer>
+    <footer className="footer">
       {total_entries ? (
         <>
-          <div>
-            {lessPages ? <div onClick={() => flipPages(-1)}>-</div> : null}
+          <div className="footer__pages">
+            {lessPages ? (
+              <button onClick={() => flipPages(-1)}>-</button>
+            ) : null}
             <h4>{`${page} of ${totalPages}`}</h4>
-            {morePages ? <div onClick={() => flipPages(1)}>+</div> : null}
+            {morePages ? <button onClick={() => flipPages(1)}>+</button> : null}
           </div>
           <h4>- {total_entries} Resturants Found -</h4>
         </>
